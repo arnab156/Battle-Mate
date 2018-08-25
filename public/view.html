@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Battle-Mate</title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+       <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+       <script src="https://code.jquery.com/jquery.js"></script>
+       <style> 
+       .head1 {
+        background-color:black;
+         height:600px;
+      }
+       </style>
+       
+</head>
+<body>
+
+ <div class="container">
+
+    <div class = head1>
+      <h1 class="title" style="color:aliceblue; text-align: center; font-size: 150px; font-family: 'PT Sans', sans-serif; ">
+        Battle-Mate</h1>
+      <p class="subtitle" style="color:aliceblue; text-align: center; font-size: 40px; font-family: 'PT Sans', sans-serif;">
+        Battle-Mate Wizard!</p>
+
+</div>
+
+     <h2 class="text-center">Your Battle Buddy:</h2>
+     <!-- <br>
+     <div id="viewPlayers"> 
+
+     </div> -->
+     <div class="columns is-mobile">
+      <div class="column" id="viewPlayers"><br></div>
+      <div class="column"><br>2</div>
+      <div class="column"></div>
+     
+    </div>
+     
+   </div>
+
+
+   <script>
+  
+  $(document).ready(function(){
+    $.get("/api/friends", function(data) {
+
+console.log(data);
+      // for (var i = 1; i < data.length; i++) {
+      //   var wellSection = $("<div>");
+      //   // wellSection.addClass("well");
+      //   wellSection.attr("id", "character-well-" + i);
+      //   $("#viewPlayers").append(wellSection);
+      //   $("#character-well-" + i).append("<h2>Name:" + data[i].name + "</h2>");
+      //   $("#character-well-" + i).append("<h3>Username: " + data[i].username + "</h4>");
+      //   $("#character-well-" + i).append("<h3>Email: " + data[i].email + "</h4>");
+      //   $("#character-well-" + i).append("<h3>Phone: " + data[i].phone + "</h4>");
+      //   $("#character-well-" + i).append("<h3>Sports: " + data[i].sports + "</h4>");
+      //   $("#character-well-" + i).append("<h3>Division: " + data[i].division + "</h4>");
+      //   $("#character-well-" + i).append("<h3>Zip: " + data[i].zip + "</h4>");
+      //   $("#character-well-" + i).append("<h3>Location: " + data[i].location + "</h4>")
+      //   $("#character-well-" + i).append("<hr><hr> <br>")
+      // }
+    });
+  });
+  
+
+      </script>
+
+
+</body>
+</html>

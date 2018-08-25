@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Battle-Mate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+<style>
+.bodyStyle{
+  /* background-image: url("gym.png"); */
+  /* background-color: black; */
+  /* color: aliceblue; */
+  margin-left:25%;
+   width:50%; 
+   margin-right:25%; 
+   padding-top:30px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+</style>
+
+
+
+  </head>
+<body class="bodyStyle" >
+  
+<h1 class="title">Battle-Mate</h1>
+
+<div class="field">
+    <label class="label">Name</label>
+    <div class="control">
+      <input class="input is-success" id = "nameInput" type="text" placeholder="Text input">
+    </div>
+  </div>
+  
+  <div class="field">
+    <label class="label">Photo</label>
+    <div class="control has-icons-left has-icons-right">
+      <input class="input is-success"  id= "photoInput" type="text" placeholder="use image URL" value="use image URL">
+      <span class="icon is-small is-left">
+        <i class="fas fa-user"></i>
+      </span>
+    </div>
+  </div>
+  <br><hr><br>
+  <h1> Questions (please select one option from each question):</h1>
+  <p> 1 - Stroingly Disagee; 2 - Disagree; 3 - Neutral; 4 - Agree; 5 - Strongly Agree </p>
+  <br>
+    <div class="field">
+      <label class="label">How much do you agree with the military of your country?</label>
+     <div class="control" id="ans1">
+        <label class="radio"> <input type="radio" name="1" value="1"> 1</label>
+        <label class="radio"> <input type="radio" name="1" value="2"> 2</label>
+        <label class="radio"> <input type="radio" name="1" value="3"> 3</label>
+        <label class="radio"> <input type="radio" name="1" value="4"> 4</label>
+        <label class="radio"> <input type="radio" name="1" value="5"> 5</label>
+     </div>
+   </div>
+
+   <div class="field">
+    <label class="label">How much do you agree that an adversary country needs a strong military?</label>
+   <div class="control" id="ans2">
+      <label class="radio"> <input type="radio" name="2" value="1"> 1</label>
+      <label class="radio"> <input type="radio" name="2" value="2"> 2</label>
+      <label class="radio"> <input type="radio" name="2" value="3"> 3</label>
+      <label class="radio"> <input type="radio" name="2" value="4"> 4</label>
+      <label class="radio"> <input type="radio" name="2" value="5"> 5</label>
+   </div>
+ </div>
+
+ <div class="field">
+  <label class="label">How much do you agree with the military of your country having nuclear weapons?</label>
+ <div class="control" id="ans3">
+    <label class="radio"> <input type="radio" name="3" value="1"> 1</label>
+    <label class="radio"> <input type="radio" name="3" value="2"> 2</label>
+    <label class="radio"> <input type="radio" name="3" value="3"> 3</label>
+    <label class="radio"> <input type="radio" name="3" value="4"> 4</label>
+    <label class="radio"> <input type="radio" name="3" value="5"> 5</label>
+ </div>
+</div>
+
+
+<div class="field">
+  <label class="label">Should nuclear weapons be banned for all countries including yours?</label>
+ <div class="control" id="ans4">
+    <label class="radio"> <input type="radio" name="4" value="1"> 1</label>
+    <label class="radio"> <input type="radio" name="4" value="2"> 2</label>
+    <label class="radio"> <input type="radio" name="4" value="3"> 3</label>
+    <label class="radio"> <input type="radio" name="4" value="4"> 4</label>
+    <label class="radio"> <input type="radio" name="4" value="5"> 5</label>
+ </div>
+</div>
+<div class="field">
+  <label class="label"> Do you agree that world without nuclear weapons is not possible? </label>
+ <div class="control" id="ans5">
+    <label class="radio"> <input type="radio" name="5"  value="1"> 1</label>
+    <label class="radio"> <input type="radio" name="5"  value="2"> 2</label>
+    <label class="radio"> <input type="radio" name="5"  value="3"> 3</label>
+    <label class="radio"> <input type="radio" name="5"  value="4"> 4</label>
+    <label class="radio"> <input type="radio" name="5"  value="5"> 5</label>
+ </div>
+</div>
+
+<div class="field">
+  <label class="label"> Should the allies of the military of your country be protected with nuclear weapons?</label>
+ <div class="control" id="ans6">
+    <label class="radio"> <input type="radio" name="6" value="1"> 1</label>
+    <label class="radio"> <input type="radio" name="6" value="2"> 2</label>
+    <label class="radio"> <input type="radio" name="6" value="3"> 3</label>
+    <label class="radio"> <input type="radio" name="6" value="4"> 4</label>
+    <label class="radio"> <input type="radio" name="6" value="5"> 5</label>
+ </div>
+</div>
+
+<div class="field">
+  <label class="label">Should nuclear weapons be available to private companies and individuals for their protection?</label>
+ <div class="control" id="ans7">
+    <label class="radio"> <input type="radio" name="7" value="1"> 1</label>
+    <label class="radio"> <input type="radio" name="7" value="2"> 2</label>
+    <label class="radio"> <input type="radio" name="7" value="3"> 3</label>
+    <label class="radio"> <input type="radio" name="7" value="4"> 4</label>
+    <label class="radio"> <input type="radio" name="7" value="5"> 5</label>
+ </div>
+</div>
+
+<div class="field">
+  <label class="label">Do you think people in the countries with right to bear arms should be able to procure a nuclear weapon irespective of who they are? </label>
+ <div class="control" id="ans8">
+    <label class="radio"> <input type="radio" name="8" value="1"> 1</label>
+    <label class="radio"> <input type="radio" name="8" value="2"> 2</label>
+    <label class="radio"> <input type="radio" name="8" value="3"> 3</label>
+    <label class="radio"> <input type="radio" name="8" value="4"> 4</label>
+    <label class="radio"> <input type="radio" name="8" value="5"> 5</label>
+ </div>
+</div>
+
+<div class="field">
+  <label class="label">Do you think people in the countries with right to bear arms should be able to procure a nuclear weapon as long as they are law abiding citizens("good people")?</label>
+ <div class="control" id="ans9">
+    <label class="radio"> <input type="radio" name="9" value="1"> 1</label>
+    <label class="radio"> <input type="radio" name="9" value="2"> 2</label>
+    <label class="radio"> <input type="radio" name="9" value="3"> 3</label>
+    <label class="radio"> <input type="radio" name="9" value="4"> 4</label>
+    <label class="radio"> <input type="radio" name="9" value="5"> 5</label>
+ </div>
+</div>
+
+<div class="field">
+  <label class="label">Do you want a nuclear weapon for your own protection?</label>
+ <div class="control" id="ans10">
+    <label class="radio"> <input type="radio" name="10" value="1"> 1</label>
+    <label class="radio"> <input type="radio" name="10" value="2"> 2</label>
+    <label class="radio"> <input type="radio" name="10" value="3"> 3</label>
+    <label class="radio"> <input type="radio" name="10" value="4"> 4</label>
+    <label class="radio"> <input type="radio" name="10" value="5"> 5</label>
+ </div>
+</div>
+
+    
+  
+  <div class="field">
+    <div class="control">
+      <label class="checkbox">
+        <input type="checkbox" id="checkBox">
+        I agree to the <a href="#">terms and conditions</a>
+      </label>
+    </div>
+  </div>
+  
+  
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-success is-outlined is-rounded modal-button" id="add-btn" data-target="modal-bis">Submit</button>
+    </div>
+<!-- <a class="button is-primary is-large modal-button" data-target="modal-bis">Launch image modal</a> -->
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id = "insertMatch">Some text in the Modal..</p>
+
+    </div>
+  
+  </div>
+
+
+    <div class="control">
+      <button class="button is-text is-rounded" id="cancel-btn" disabled>Cancel</button>
+    </div>
+
+  <script type="text/javascript">
+
+     
+  $("#add-btn").on("click", function(event) {
+    event.preventDefault();
+    var newForm = {
+      name: $("#nameInput").val(),
+      photo: $("#photoInput").val(),
+      scores: [  $('input[name="1"]:checked').val(), $('input[name="2"]:checked').val(), $('input[name="3"]:checked').val(),$('input[name="4"]:checked').val(), $('input[name="5"]:checked').val(), $('input[name="6"]:checked').val(),
+      $('input[name="7"]:checked').val(), $('input[name="8"]:checked').val(), $('input[name="9"]:checked').val(), $('input[name="10"]:checked').val() ]
+    };
+
+    $.post("/api/friends", newForm)
+      .then(function(data) {
+        console.log("survey.html", data);
+
+        $("#insertMatch").html(data);
+        // alert("Searching for your friend now...");
+
+      }); 
+
+  });
+
+
+
+
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  var btn = document.getElementById("add-btn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+</body>
+</html>
+
+
