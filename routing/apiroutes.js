@@ -57,14 +57,14 @@ module.exports = function(app){
         console.log(min)
 
         for (var a = 0; a<grandTotalMatches.length; a++){
-
+            
             if( min === grandTotalMatches[a] ){
-                console.log(friendsData[a].name);
-                console.log(friendsData[a].photo);
+                
+                return  res.send("Your Match is - " +friendsData[a].name+ " & his/her picture link is " + friendsData[a].photo);
     
                 // return $("#insertMatch").append(friendsData[a].name+friendsData[a].photo);
             }
-            return  res.send(friendsData[a].name+friendsData[a].photo);
+            
         }
 
 

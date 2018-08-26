@@ -1,42 +1,42 @@
 var players = [
-    {"name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    {"name":"Vlad",
+    "photo":"http://www.slate.com/content/dam/slate/blogs/the_slatest/2017/08/05/putin_went_on_vacation_and_released_a_new_set_of_shirtless_pictures/TOPSHOTRUSSIAPUTIN.jpeg.CROP.promo-xlarge2.jpeg",
     "scores":[5,1,4,4,5,1,2,5,4,1]
     },
     {"name":"Ryan",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"http://blogs.smh.com.au/entertainment/getflickd/44655_native.jpeg.jpg",
     "scores":[2,5,4,4,4,1,2,2,3,1]
     },
     {"name":"Priya",
-     "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+     "photo":"http://higher-ed.us/wp-content/uploads/2017/12/portrait-pictures-4-excellent-idea-2048x1893px-250-21-kb-309101.jpg",
      "scores":[5,5,4,2,1,1,3,2,3,2]
     },
     {"name":"Madonna",
-     "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+     "photo":"https://orig00.deviantart.net/e816/f/2011/109/d/7/stranger_77_by_dannyst-d3ecjn9.jpg",
      "scores":[1,1,1,1,1,1,1,1,1,1]
     },
     {"name":"Reynold",
-     "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+     "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuL_kosDShCTtf3fcgwqjV7tZzmXAkzASNAz9v1r7EfjnFDdoZ",
      "scores":[4,5,4,4,4,4,4,4,4,4]
     },
     {"name":"Mona",
-     "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+     "photo":"http://npg.si.edu/exhibit/feature/images/schoeller_full.jpg",
      "scores":[2,2,1,3,1,1,2,4,2,1]
     },
     {"name":"Michelle",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"http://images.nationalgeographic.com/wpf/media-live/photos/000/015/cache/afghan-girl-portrait_1563_990x742.jpg",
     "scores":[3,3,1,2,2,1,2,2,1,1]
     },
     {"name":"Yiting",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYfqrpVUUN8UMA075-5vTkEQvtOQ7dRf4Y3JYkKvEK2TEWS0z",
     "scores":[3,5,4,3,4,1,2,2,5,1]
     },
     {"name":"Darren",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://pixel.nymag.com/imgs/daily/vulture/2018/07/30/30-john-cho-feature.w536.h536.jpg",
     "scores":[2,5,4,4,4,3,2,4,5,1]
     },
-    {"name":"Martyanne",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    {"name":"Rodney",
+    "photo":"https://i-cdn.phonearena.com/images/articles/305517-image/PORTRAIT-0578-20170816-135513-555-Custom.jpg",
     "scores":[1,5,5,4,5,1,2,1,1,1]
     }         
 ];

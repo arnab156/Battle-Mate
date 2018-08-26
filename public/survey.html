@@ -77,7 +77,7 @@
   <div class="field">
     <label class="label">Photo</label>
     <div class="control has-icons-left has-icons-right">
-      <input class="input is-success"  id= "photoInput" type="text" placeholder="use image URL" value="use image URL">
+      <input class="input is-success"  id= "photoInput" type="text" placeholder="https://tinyjpg.com/images/social/website.jpg" value="https://tinyjpg.com/images/social/website.jpg">
       <span class="icon is-small is-left">
         <i class="fas fa-user"></i>
       </span>
@@ -223,18 +223,14 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <p id = "insertMatch">Some text in the Modal..</p>
-
+      <p id = "insertMatch" class = "center" >Some text in the Modal..</p>
     </div>
-  
   </div>
-
-
     <div class="control">
       <button class="button is-text is-rounded" id="cancel-btn" disabled>Cancel</button>
     </div>
 
-  <script type="text/javascript">
+<script type="text/javascript">
 
      
   $("#add-btn").on("click", function(event) {
@@ -257,34 +253,26 @@
 
   });
 
-
-
-
   // Get the modal
   var modal = document.getElementById('myModal');
-
   var btn = document.getElementById("add-btn");
-
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
-
   // When the user clicks the button, open the modal 
   btn.onclick = function() {
       modal.style.display = "block";
   }
-
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
       modal.style.display = "none";
   }
-
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
       if (event.target == modal) {
           modal.style.display = "none";
       }
   }
-  </script>
+</script>
 </body>
 </html>
 
